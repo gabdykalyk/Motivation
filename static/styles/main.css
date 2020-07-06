@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Nunito;
 }
@@ -351,3 +354,44 @@ input::placeholder {
     font-weight: 600;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .gallery {
+        justify-content: space-between;
+    }
+
+    .gallery__block__link {
+        left: -45px;
+    }
+
+    .gallery__row {
+        width: 48%;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .gallery__row-item + .gallery__row-item {
+        margin-top: 30px;
+    }
+
+    .gallery__block__link__about {
+        left: -45px;
+    }
+
+    .info__row1__ux {
+        width: 48%;
+    }
+
+    .info__row1__motion, 
+    .info__row1__development {
+        padding-left: 0;
+        width: 48%;
+    }
+
+    .info__row2__branding {
+        width: 48%;
+    }
+}
